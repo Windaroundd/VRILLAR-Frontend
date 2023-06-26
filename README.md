@@ -1,46 +1,19 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+1. Dự án này được khởi tạo bằng create-react-app --template typescipt\
+   This project start with create-react-app --template typescript
 
-### `npm start`
+2. Tôi bắt đầu crawl data từ trang https://www.formula1.com/en/results.html/2023/races.html (RACE) bằng việc custom lại git repo [https://blog.logrocket.com/node-js-web-scraping-tutorial/#what-web-crawler.] (https://github.com/Jordanirabor/workers-tutorial)\
+    I start to crawl data from the website https://www.formula1.com/en/results.html/2023/races.html by recustom git repo of https://github.com/Jordanirabor/workers-tutorial\
+    2.1 Sau khi đọc code từ workers-tutorial, crawl thử thì tôi bị lỗi tôi đã fix nhờ cheeriojs/cheerio#613 ####After read and try coding from workers-tutorial, in the process of crawl data i fixed the error form this cheeriojs/cheerio#613\
+    2.1.1 Tôi đã sử dụng chatGPT để tạo hàm format lại dữ liệu để đẩy lên firebase ####I used chatGTP to create a function to format data get form cheerio and push it to firebase\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Tôi đã sử dụng bản tự custome dựa trên workers-tutorial để tìm các attributes data-name,data-value trên trang RACE sau đó render các URL và đưa chúng vào https://www.octoparse.com/ để tiến hành crawl data\
+    I used my own custome worker base on workers-tutorial to find all attributes of data-name,data-value on RACE then then render needed URLs và import them to https://www.octoparse.com/ for crawl data process
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
